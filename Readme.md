@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дмитрий Рябинин](https://up.htmlacademy.ru/adaptive/16/user/63289).
-* Наставник: `Неизвестно`.
+* Наставник: [Оксана Сергеева](https://up.htmlacademy.ru/adaptive/16/user/488341).
 
 ---
 
