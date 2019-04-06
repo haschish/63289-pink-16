@@ -7,22 +7,22 @@
   <body>
     <header class="page-header">
       <a href="./index.html" class="logo-link">
-        <img src="http://placehold.it/150x100" alt="Логотип" class="logo-link__image">
+        <img class="logo-link__image" src="http://placehold.it/150x100" alt="Логотип">
       </a>
       <button class="hamburger page-header__menu-toggle" aria-label="Меню"></button>
-      <nav class="site-nav">
+      <nav class="site-nav page-header__nav">
         <ul class="sive-nav__list">
           <li class="site-nav__item">
-            <a href="#">Главная</a>
+            <a class="site-nav__link" href="#">Главная</a>
           </li>
           <li class="site-nav__item">
-            <a href="#">Фотографии</a>
+            <a class="site-nav__link" href="#">Фотографии</a>
           </li>
           <li class="site-nav__item">
-            <a href="#">Конкурс</a>
+            <a class="site-nav__link" href="#">Конкурс</a>
           </li>
           <li class="site-nav__item">
-            <a href="#">Html Academy</a>
+            <a class="site-nav__link" href="#">Html Academy</a>
           </li>
         </ul>
       </nav>
@@ -33,21 +33,29 @@
       </section>
     </main>
     <footer class="page-footer">
-      <img class="logo-footer" src="http://placehold.it/150x100" alt="">
+      <img class="logo-footer" src="http://placehold.it/150x100" alt="Логотип" width="150" height="100">
       <ul class="social-list">
         <li class="social-list__item">
-          <a href="#"><img src="http://placehold.it/16x16" alt="Twitter"></a>
+          <a class="social-list__link" href="#" target="_blank">
+            <img src="http://placehold.it/16x16" alt="Twitter" width="16" height="16">
+          </a>
         </li>
         <li class="social-list__item">
-          <a href="#"><img src="http://placehold.it/16x16" alt="facebook"></a>
+          <a class="social-list__link" href="#" target="_blank">
+            <img src="http://placehold.it/16x16" alt="facebook" width="16" height="16">
+          </a>
         </li>
         <li class="social-list__item">
-          <a href="#"><img src="http://placehold.it/16x16" alt="Youtube"></a>
+          <a class="social-list__link" href="#" target="_blank">
+            <img src="http://placehold.it/16x16" alt="Youtube" width="16" height="16">
+          </a>
         </li>
       </ul>
       <p class="developed">
         Разработано
-        <img class="developed__logo" src="http://placehold.it/20x300" alt="HtmlAcademy" >
+        <a class="developed__link" href="#" target="_blank">
+          <img class="developed__logo" src="http://placehold.it/20x30" alt="HtmlAcademy" width="20" height="30">
+        </a>
       </p>
     </footer>
   </body>

@@ -13,28 +13,28 @@
       <nav class="site-nav">
         <ul class="sive-nav__list">
           <li class="site-nav__item">
-            <a href="#">Главная</a>
+            <a class="site-nav__link" href="#">Главная</a>
           </li>
           <li class="site-nav__item">
-            <a href="#">Фотографии</a>
+            <a class="site-nav__link" href="#">Фотографии</a>
           </li>
           <li class="site-nav__item">
-            <a href="#">Конкурс</a>
+            <a class="site-nav__link" href="#">Конкурс</a>
           </li>
           <li class="site-nav__item">
-            <a href="#">Html Academy</a>
+            <a class="site-nav__link" href="#">Html Academy</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="page-main">
-      <section class="photos">
+      <section class="photos page-main__photos">
         <h2 class="photos__header">Фотографии пользователей</h2>
         <p class="photos__text">Взгляните на фотографии, которые выкладывают пользватели! Видите, как не хватает ваших?</p>
-        <ul class="photos__list">
+        <ul class="photo-list photos__list">
           <li class="photo-item">
             <span class="photo-item__title">Панорама дня</span>
-            <img class="photo-item__image photo-item__image--wide" src="http://placehold.it/150x100" alt="Фотография">
+            <img class="photo-item__image photo-item__image--wide" src="http://placehold.it/150x100" alt="Фотография" width="150" height="100">
             <div class="photo-item__description">
               <p class="photo-item__author">Анна <span class="photos-list__time-ago">(5 минут назад)</span></p>
               <p class="photo-item__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
@@ -42,7 +42,7 @@
             </div>
           </li>
           <li class="photo-item">
-            <img class="photo-item__image" src="http://placehold.it/150x100" alt="Фотография">
+            <img class="photo-item__image" src="http://placehold.it/150x100" alt="Фотография" width="150" height="100">
             <div class="photo-item__description">
               <p class="photo-item__author">Левон <span class="photos-list__time-ago">(5 часов назад)</span></p>
               <p class="photo-item__text">Вчера на луну летал, сегодня в руки к нам попал.</p>
@@ -50,7 +50,7 @@
             </div>
           </li>
           <li class="photo-item">
-            <img class="photo-item__image" src="http://placehold.it/150x100" alt="Фотография">
+            <img class="photo-item__image" src="http://placehold.it/150x100" alt="Фотография" width="150" height="100">
             <div class="photo-item__description">
               <p class="photo-item__author">Антон <span class="photos-list__time-ago">(12 часов назад)</span></p>
               <p class="photo-item__text">Соседи будут рады!</p>
@@ -58,7 +58,7 @@
             </div>
           </li>
           <li class="photo-item">
-            <img class="photo-item__image" src="http://placehold.it/150x100" alt="Фотография">
+            <img class="photo-item__image" src="http://placehold.it/150x100" alt="Фотография" width="150" height="100">
             <div class="photo-item__description">
               <p class="photo-item__author">Борис <span class="photos-list__time-ago">(20 часов назад)</span></p>
               <p class="photo-item__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
@@ -66,7 +66,7 @@
             </div>
           </li>
           <li class="photo-item">
-            <img class="photo-item__image" src="http://placehold.it/150x100" alt="Фотография">
+            <img class="photo-item__image" src="http://placehold.it/150x100" alt="Фотография" width="150" height="100">
             <div class="photo-item__description">
               <p class="photo-item__author">Сергей <span class="photos-list__time-ago">(25 часов назад)</span></p>
               <p class="photo-item__text">Самая кубанская в мире!</p>
@@ -74,7 +74,7 @@
             </div>
           </li>
           <li class="photo-item">
-            <img class="photo-item__image" src="http://placehold.it/150x100" alt="Фотография">
+            <img class="photo-item__image" src="http://placehold.it/150x100" alt="Фотография" width="150" height="100">
             <div class="photo-item__description">
               <p class="photo-item__author">Максим <span class="photos-list__time-ago">(40 часов назад)</span></p>
               <p class="photo-item__text">Где снег-то?</p>
@@ -82,7 +82,7 @@
             </div>
           </li>
           <li class="photo-item">
-            <img class="photo-item__image" src="http://placehold.it/150x100" alt="Фотография">
+            <img class="photo-item__image" src="http://placehold.it/150x100" alt="Фотография" width="150" height="100">
             <div class="photo-item__description">
               <p class="photo-item__author">Максим <span class="photos-list__time-ago">(40 часов назад)</span></p>
               <p class="photo-item__text">Где снег-то?</p>
@@ -90,7 +90,7 @@
             </div>
           </li>
           <li class="photo-item">
-            <img class="photo-item__image" src="http://placehold.it/150x100" alt="Фотография">
+            <img class="photo-item__image" src="http://placehold.it/150x100" alt="Фотография" width="150" height="100">
             <div class="photo-item__description">
               <p class="photo-item__author">Надежда <span class="photos-list__time-ago">(45 часов назад)</span></p>
               <p class="photo-item__text">Всем GM и взаимные лайки!</p>
@@ -104,18 +104,26 @@
       <img class="logo-footer" src="http://placehold.it/150x100" alt="">
       <ul class="social-list">
         <li class="social-list__item">
-          <a href="#"><img src="http://placehold.it/16x16" alt="Twitter"></a>
+          <a class="social-list__link" href="#" target="_blank">
+            <img src="http://placehold.it/16x16" alt="Twitter" width="16" height="16">
+          </a>
         </li>
         <li class="social-list__item">
-          <a href="#"><img src="http://placehold.it/16x16" alt="facebook"></a>
+          <a class="social-list__link" href="#" target="_blank">
+            <img src="http://placehold.it/16x16" alt="facebook" width="16" height="16">
+          </a>
         </li>
         <li class="social-list__item">
-          <a href="#"><img src="http://placehold.it/16x16" alt="Youtube"></a>
+          <a class="social-list__link" href="#" target="_blank">
+            <img src="http://placehold.it/16x16" alt="Youtube" width="16" height="16">
+          </a>
         </li>
       </ul>
       <p class="developed">
         Разработано
-        <img class="developed__logo" src="http://placehold.it/20x300" alt="HtmlAcademy" >
+        <a class="developed__link" href="#" target="_blank">
+          <img class="developed__logo" src="http://placehold.it/20x30" alt="HtmlAcademy" width="20" height="30">
+        </a>
       </p>
     </footer>
   </body>
