@@ -1,37 +1,61 @@
 .platforms {
   display: flex;
   flex-direction: column;
-  background-color: #1d2631;
-  padding: 20px;
-  padding-bottom: 30px;
 }
 
 .platforms__image {
   margin-top: 110px;
+  align-self: flex-start;
+}
+
+.platforms__content {
+  width: 320px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  // background-color: #1d2631;
+  display: flex;
+  flex-direction: column;
+  min-height: 270px;
+}
+
+.platforms__statement {
+  display: none;
+  font-size: 40px;
+  line-height: 49px;
+  font-weight: 300;
+  padding: 0 30px;
+  color: white;
+  text-align: center;
+  margin: 90px 0 0;
 }
 
 .platforms__download {
   font: inherit;
   font-size: 18px;
-  line-height: 55px;
   font-weight: 700;
   color: @color-white;
   text-decoration: none;
   text-align: center;
   background-color: transparent;
   border: 2px solid @color-white;
+  box-sizing: border-box;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 27px;
+  margin-top: 26px;
 }
 
 .platforms__list {
   list-style: none;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
   width: 206px;
   margin: 0 auto;
-  margin-top: 30px;
   padding: 0;
+  margin-top: 30px;
 }
 
 .platforms__text {
@@ -39,6 +63,79 @@
   font-size: 14px;
   font-weight: 300;
   text-align: center;
+  margin: 0;
   padding: 0 15px;
   margin-top: 20px;
+  line-height: 24px;
+}
+
+
+@media (min-width: 660px) {
+  .platforms {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+
+  .platforms__content {
+    background-color: transparent;
+    width: 300px;
+    padding: 0;
+  }
+
+  .platforms__statement {
+    display: block;
+  }
+
+  .platforms__download {
+    margin-top: 31px;
+  }
+
+  .platforms__list {
+    margin-top: 44px;
+  }
+
+  .platforms__text {
+    font-size: 18px;
+    padding: 0;
+    margin-top: 34px;
+  }
+
+  .platforms__image {
+    margin-top: auto;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .platforms__content {
+    background-color: transparent;
+    width: 300px;
+    padding: 0;
+  }
+
+  .platforms__statement {
+    display: block;
+    margin-top: 109px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .platforms__download {
+    margin-top: 50px;
+    font-size: 21px;
+  }
+
+  .platforms__list {
+    margin-top: 65px;
+  }
+
+  .platforms__text {
+    font-size: 18px;
+    padding: 0;
+    margin-top: 54px;
+  }
+
+  .platforms__image {
+    margin-top: auto;
+  }
 }

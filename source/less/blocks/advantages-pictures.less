@@ -1,0 +1,39 @@
+.advantages-pictures {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.advatages-pictures__item {
+  background-color: rgba(0, 255, 0, 0.1);
+  width: 157px;
+  height: 280px;
+}
+
+.advatages-pictures__item:not(:last-child) {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .advatages-pictures__item {
+    width: 268px;
+    height: 485px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .advantages-pictures {
+    justify-content: space-between;
+  }
+
+  .advatages-pictures__item {
+    width: 236px;
+    height: 300px;
+  }
+
+  .advatages-pictures__item:not(:last-child) {
+    display: block;
+  }
+}

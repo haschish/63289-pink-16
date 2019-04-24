@@ -1,18 +1,94 @@
 .advantages {
   font-size: 24px;
+  line-height: 30px;
   font-weight: 300;
   color: #283645;
-  background: linear-gradient(175deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 220px, rgba(242, 242, 242, 1) 220px, rgba(242, 242, 242, 1) 100%);
+  // background: linear-gradient(175deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 220px, rgba(242, 242, 242, 1) 220px, rgba(242, 242, 242, 1) 100%);
 }
 
 .advantages__question {
+  margin: 38px 0 0;
   text-align: center;
 }
 
 .advantages__answer {
   text-align: center;
+  margin: 26px 0 0;
 }
 
-.advantages__list {
-  margin-top: 60px;
+.advantages__content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 113px;
+}
+
+.advantages__pictures {
+  margin-top: 40px;
+}
+
+@media (min-width: 660px) {
+  .advantages {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .advantages__question {
+    margin-top: 45px;
+  }
+
+  .advantages__answer {
+    padding: 0 100px;
+    margin-top: -2px;
+  }
+
+  .advantages__content {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding: 0 20px;
+    margin-top: 48px;
+  }
+
+  .advantages__pictures {
+    min-height: 482px;
+    min-width: 268px;
+    margin-top: 0;
+  }
+
+  .advantages__list {
+    flex-grow: 1;
+    margin-top: 72px;
+    margin-left: 42px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .advantages {
+    font-size: 50px;
+    line-height: 62px;
+  }
+
+  .advantages__question {
+    margin-top: 61px;
+  }
+
+  .advantages__answer {
+    padding: 0 300px;
+    margin-top: 0;
+  }
+
+  .advantages__content {
+    flex-direction: column-reverse;
+    padding: 0 160px;
+    margin-top: 74px;
+  }
+
+  .advantages__pictures {
+    min-height: 300px;
+  }
+
+  .advantages__list {
+    margin-top: 55px;
+    margin-left: 0;
+  }
 }
