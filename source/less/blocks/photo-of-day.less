@@ -1,30 +1,13 @@
-.photo-item {
+.photo-of-day {
   position: relative;
   display: flex;
   flex-direction: column;
   font-size: 14px;
   line-height: 24px;
   color: #283645;
-  min-width: 280px;
-  min-height: 455px;
 }
 
-.photo-item:not(:last-child) {
-  margin-bottom: 20px;
-}
-
-.photo-item__image {
-  padding: 0 20px;
-  width: 100%;
-  height: auto;
-  box-sizing: border-box;
-
-  &--wide {
-    padding: 0;
-  }
-}
-
-.photo-item__title {
+.photo-of-day__title {
   position: absolute;
   right: 20px;
   font-size: 12px;
@@ -32,17 +15,26 @@
   text-transform: uppercase;
   color: @color-white;
   background-color: #d22856;
-  padding: 7px 20px;
+  padding: 10px 20px;
 }
 
-.photo-item__description {
+.photo-of-day__image {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.photo-of-day__description {
   position: relative;
-  // background-color: #f2f2f2;
-  margin: 0 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
   padding: 20px 18px;
+  margin: 0 20px;
 }
 
-.photo-item__author {
+.photo-of-day__author {
   margin: 0;
   font-weight: 700;
 }
@@ -53,51 +45,57 @@
   text-transform: uppercase;
 }
 
-.photo-item__text {
+.photo-of-day__text {
   margin: 0;
 }
 
-.photo-item__like {
+.photo-of-day__like {
   font-size: 12px;
   text-transform: uppercase;
   color: #d22856;
-  padding-left: 31px;
+  padding: 0 31px;
   margin: 0;
   margin-top: 10px;
 }
 
 @media (min-width: 660px) {
-  .photo-item__title {
+  .photo-of-day__description {
+    padding: 26px 28px;
+  }
+
+  .photo-of-day__title {
     top: 57px;
+    padding: 7px 20px;
   }
 
-  .photo-item {
-    min-width: 300px;
-  }
-
-  .photo-item__image--wide {
+  .photo-of-day__image {
     height: 509px;
   }
 
-  .photo-item__description {
-    padding: 25px 28px;
-  }
-
-  .photo-item__like {
+  .photo-of-day__like {
     position: absolute;
-    right: 58px;
+    right: 28px;
     top: 16px;
   }
 }
 
 @media (min-width: 1200px) {
-  .photo-item__description {
+  .photo-of-day__description {
     margin: 0 130px;
-    padding: 23px 28px;
+    padding: 22px 28px;
   }
 
-  .photo-item__like {
-    right: 62px;
+  .photo-of-day__title {
+    top: 57px;
+    padding: 7px 20px;
+  }
+
+  .photo-of-day__image {
+    height: 509px;
+  }
+
+  .photo-of-day__like {
+    right: 31px;
     top: 12px;
   }
 }
