@@ -2,10 +2,12 @@
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
+  min-height: 171px;
+  box-sizing: border-box;
   text-align: center;
   color: @color-white;
+  padding-top: 29px;
   margin: 0;
-  padding: 29px 70px 82px;
 }
 
 .photos__content {
@@ -29,7 +31,8 @@
   .photos__header {
     font-size: 50px;
     line-height: 62px;
-    padding: 67px 150px 138px;
+    min-height: 330px;
+    padding-top: 67px;
   }
 
   .photos__text {
@@ -42,13 +45,14 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .photos__header {
-    padding: 62px 400px 100px;
+    min-height: 284px;
+    padding-top: 62px;
   }
 
   .photos__text {
-    padding: 92px 300px 86px;
+    padding: 92px 190px 86px;
   }
 
   .photos__list {

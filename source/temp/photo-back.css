@@ -13,7 +13,7 @@ body {
 }
 
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   body {
     background: transparent url("./pink-photo-desktop.jpg") no-repeat 50% 0;
     background-size: 1200px auto;
