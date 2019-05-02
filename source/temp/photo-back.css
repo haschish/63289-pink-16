@@ -1,0 +1,21 @@
+body {
+  background: transparent url("./pink-photo-mobile.jpg") no-repeat 50% 0;
+  background-size: 320px auto;
+  min-height: 4200px;
+}
+
+
+@media (min-width: 660px) {
+  body {
+    background: transparent url("./pink-photo-tablet.jpg") no-repeat 50% 0;
+    background-size: 660px auto;
+  }
+}
+
+
+@media (min-width: 960px) {
+  body {
+    background: transparent url("./pink-photo-desktop.jpg") no-repeat 50% 0;
+    background-size: 1200px auto;
+  }
+}

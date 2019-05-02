@@ -5,6 +5,7 @@
   color: #283645;
   margin: 0;
   padding: 0 22px;
+  line-height: 24px;
 }
 
 .advantages-list__item {
@@ -13,13 +14,70 @@
   align-items: center;
 }
 
+.advantages-list__item:not(:first-child) {
+  margin-top: 32px;
+}
+
 .advantages-list__title {
   font-size: 18px;
   font-weight: 700;
+  margin: 0;
 }
 
 .advantages-list__text {
   font-size: 14px;
   font-weight: 400;
   text-align: center;
+  margin: 13px 0 0;
+}
+
+@media (min-width: 660px) {
+  .advantages-list {
+    padding: 0;
+  }
+
+  .advantages-list__item {
+    align-items: flex-start;
+  }
+
+  .advantages-list__item:not(:first-child) {
+    margin-top: 34px;
+  }
+
+  .advantages-list__title {
+    text-align: left;
+  }
+
+  .advantages-list__text {
+    text-align: left;
+  }
+}
+
+@media (min-width: 960px) {
+  .advantages-list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .advantages-list__item {
+    align-items: center;
+    width: 240px;
+  }
+
+  .advantages-list__item:not(:first-child) {
+    margin-top: 0;
+  }
+
+  .advantages-list__title {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .advantages-list__text {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 26px;
+    line-height: 30px;
+  }
 }

@@ -1,8 +1,39 @@
 .page-main {
-  background-color: #1d2631;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
+  // background-color: #1d2631;
+  // background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   display: flex;
   flex-direction: column;
+}
+
+.page-main__platforms {
+  min-height: 667px;
+}
+
+.page-main__publish {
+  min-height: 914px;
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+@media (min-width: 660px) {
+  .page-main__platforms {
+    min-height: 620px;
+    padding: 0 20px;
+  }
+
+  .page-main__publish {
+    min-height: 686px;
+  }
+}
+
+@media (min-width: 960px) {
+  .page-main__platforms {
+    padding: 0 10px;
+    min-height: 746px;
+  }
+
+  .page-main__publish {
+    min-height: 647px;
+  }
 }
