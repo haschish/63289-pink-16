@@ -1,0 +1,42 @@
+.price {
+  min-height: 470px;
+
+  outline: 2px solid green;
+  outline-offset: -2px;
+  overflow: hidden;
+}
+
+.price__table {
+  margin-left: -560px;
+  margin-top: 90px;
+}
+
+.price__control {
+  width: 60px;
+  margin: 30px auto 0;
+}
+
+@media (min-width: 660px) {
+  .price {
+    min-height: 378px;
+  }
+
+  .price__table {
+    margin-left: 0;
+    margin-top: 88px;
+  }
+
+  .price__control {
+    display: none;
+  }
+}
+
+@media (min-width: 960px) {
+  .price {
+    min-height: 524px;
+  }
+
+  .price__table {
+    margin-top: 150px;
+  }
+}
