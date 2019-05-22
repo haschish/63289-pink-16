@@ -1,0 +1,66 @@
+.fieldset-emotions {
+  position: relative;
+  border: none;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fieldset-emotions legend {
+  .font-14-red-upper();
+  margin: 0 auto;
+  position: relative;
+  top: 35px;
+  text-align: center;
+  // padding: 36px 16px 0;
+}
+
+.fieldset-emotions textarea {
+  margin-top: 52px;
+  padding: 19px;
+  box-sizing: border-box;
+  border: 2px solid #e5e5e5;
+  resize: none;
+  font: inherit;
+  font-size: 18px;
+  width: 100%;
+  height: 201px;
+}
+
+@media (min-width: 660px) {
+  .fieldset-emotions {
+    padding: 0 60px;
+  }
+
+  .fieldset-emotions legend {
+    background-color: white;
+    position: absolute;
+    left: 180px;
+    right: 180px;
+    top: -10px;
+  }
+
+  .fieldset-emotions textarea {
+    margin-top: 48px;
+    height: 193px;
+  }
+}
+
+@media (min-width: 960px) {
+  .fieldset-emotions {
+    padding: 0 60px;
+  }
+
+  .fieldset-emotions legend {
+    left: 340px;
+    right: 340px;
+  }
+
+  .fieldset-emotions textarea {
+    margin-top: 44px;
+    height: 128px;
+    padding: 22px;
+  }
+}

@@ -1,5 +1,11 @@
 .page-header {
-  background-color: #283645;
+  background-color: rgba(40, 54, 69, 0.3);
+}
+
+.page-header__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .page-header__title {
@@ -23,10 +29,10 @@
 
 
 @media (min-width: 960px) {
-  .page-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 10px;
+  .page-header__content {
+    flex-direction: row;
+    width: @content-width-desktop;
+    margin: 0 auto;
   }
 
   .page-header__title {

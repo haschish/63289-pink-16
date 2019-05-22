@@ -1,0 +1,64 @@
+.fieldset-person {
+  padding: 0;
+}
+
+.fieldset-person__list {
+  list-style: none;
+  margin: 22px 0 0;
+  padding: 0;
+}
+
+.fieldset-person__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.fieldset-person__item:not(:first-child) {
+  margin-top: 23px;
+}
+
+.fieldset-person__item label {
+  .font-14-red-upper();
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+.fieldset-person__item input {
+  height: 63px;
+  box-sizing: border-box;
+  font: inherit;
+  font-size: 18px;
+  border: 2px solid #e5e5e5;
+  padding: 0 20px;
+}
+
+@media (min-width: 660px) {
+  .fieldset-person__list {
+    margin-top: 52px;
+  }
+
+  .fieldset-person__item {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .fieldset-person__item:not(:first-child) {
+    margin-top: 52px;
+  }
+
+  .fieldset-person__item label {
+    padding-left: 0;
+    margin: 0;
+    margin-right: 16px;
+  }
+
+  .fieldset-person__item input {
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: 960px) {
+  .fieldset-person__list {
+    margin-top: 16px;
+  }
+}
