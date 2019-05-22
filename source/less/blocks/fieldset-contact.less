@@ -1,0 +1,132 @@
+.fieldset-contact {
+  position: relative;
+  border: none;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.fieldset-contact legend {
+  .font-14-red-upper();
+  text-align: center;
+  display: none;
+}
+
+.fieldset-contact__list {
+  list-style: none;
+  margin: 36px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.fieldset-contact__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.fieldset-contact__item:not(:first-child) {
+  margin-top: 23px;
+}
+
+.fieldset-contact__title {
+  color: #d22856;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  padding-left: 21px;
+}
+
+.fieldset-contact p {
+  margin: 0;
+  display: flex;
+}
+
+.fieldset-contact__icon {
+  display: none;
+  width: 61px;
+  height: 63px;
+  border-right: 2px solid #e5e5e5;
+  background-color: #e5e5e5;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fieldset-contact__icon--phone {
+  background-image: url("../img/icon-phone.svg");
+}
+
+.fieldset-contact__icon--mail {
+  background-image: url("../img/icon-mail.svg");
+}
+
+.fieldset-contact input {
+  height: 63px;
+  box-sizing: border-box;
+  font: inherit;
+  font-size: 18px;
+  border: 2px solid #e5e5e5;
+  padding: 0 20px;
+  flex-grow: 1;
+}
+
+@media (min-width: 660px) {
+  .fieldset-contact {
+    // border: 2px solid #e5e5e5;
+    padding: 0 58px;
+  }
+
+  .fieldset-contact legend {
+    display: block;
+    background-color: white;
+    position: absolute;
+    left: 180px;
+    right: 180px;
+    top: -10px;
+  }
+
+  .fieldset-contact__list {
+    margin-top: 47px;
+  }
+
+  .fieldset-contact__item {
+    flex-direction: column-reverse;
+  }
+
+  .fieldset-contact__item:not(:first-child) {
+    margin-top: 36px;
+  }
+
+  .fieldset-contact__title {
+    margin: 15px 0 0;
+  }
+
+  .fieldset-contact__icon {
+    display: block;
+  }
+}
+
+@media (min-width: 960px) {
+  .fieldset-contact {
+    // border: 2px solid #e5e5e5;
+    padding: 0 60px;
+  }
+
+  .fieldset-contact legend {
+    left: 340px;
+    right: 340px;
+  }
+
+  .fieldset-contact__list {
+    margin-top: 44px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .fieldset-contact__item {
+    width: 375px;
+  }
+
+  .fieldset-contact__item:not(:first-child) {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,60 @@
+.fieldset-submit {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.fieldset-submit__button {
+  height: 63px;
+  font: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  // background-color: #2aab6d;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  margin-top: 21px;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
+.fieldset-submit__text {
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 40px 0 0;
+}
+
+.fieldset-submit__mark {
+  color: #d22856;
+}
+
+.fieldset-submit__for-filling {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .fieldset-submit {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .fieldset-submit__button {
+    margin: 0;
+    width: 300px;
+  }
+
+  .fieldset-submit__text {
+    margin: 0;
+  }
+}
+
+@media (min-width: 960px) {
+  .fieldset-submit__for-filling {
+    display: inline;
+  }
+}

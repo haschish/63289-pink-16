@@ -4,66 +4,183 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="./temp/form-back.css">
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page-body">
     <div class="page-body__wrapper">
       <header class="page-header">
-        <div class="page-header__title">
-          <span class="logo-link">
-            <img class="logo-link__image" src="./img/logo-pink-white-mobile.svg" alt="Логотип" width="75" height="23">
-          </span>
-          <button type="button" class="hamburger page-header__menu-toggle" aria-label="Меню"></button>
-        </div>
-        <nav class="site-nav page-header__nav">
-          <ul class="sive-nav__list">
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="./index.html">Главная</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="./photo.html">Фотографии</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="#">Конкурс</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="https://htmlacademy.ru">Html Academy</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+          <div class="page-header__content">
+            <div class="page-header__title">
+              <span class="logo-link">
+                <picture class="logo-link__image">
+                  <source media="(min-width: 660px)" srcset="./img/logo-pink-white-tablet.svg">
+                  <source media="(min-width: 960px)" srcset="./img/logo-pink-white-desktop.svg">
+                  <img src="./img/logo-pink-white-mobile.svg" alt="Логотип">
+                </picture>
+              </span>
+              <button type="button" class="hamburger page-header__menu-toggle" aria-label="Меню"></button>
+            </div>
+            <nav class="site-nav page-header__nav">
+              <ul class="sive-nav__list">
+                <li class="site-nav__item">
+                  <a class="site-nav__link" href="#">Главная</a>
+                </li>
+                <li class="site-nav__item">
+                  <a class="site-nav__link" href="./photo.html">Фотографии</a>
+                </li>
+                <li class="site-nav__item">
+                  <a class="site-nav__link" href="./form.html">Конкурс</a>
+                </li>
+                <li class="site-nav__item">
+                  <a class="site-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
       <main class="page-main">
         <section class="competition">
           <h2 class="competition__header">Конкурс на самое безбашенное путешествие с Пинк</h2>
+          <div class="content competition__content">
+            <p class="competition__text">
+              Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span>
+            </p>
+            <form action="" class="form competition__form">
+              <fieldset class="fieldset-person form__person">
+                <ul class="fieldset-person__list">
+                  <li class="fieldset-person__item">
+                    <label for="surname">Фамилия:</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Укажите фамилию *" required>
+                  </li>
+                  <li class="fieldset-person__item">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" placeholder="Введите ваше имя *" required>
+                  </li>
+                  <li class="fieldset-person__item">
+                    <label for="middle-name">Отчество:</label>
+                    <input type="text" id="middle-name" name="lastname" placeholder="Ну и отчество тоже">
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="fieldset-progress form__progress">
+                <legend>Ваши безбашенные достижения в путешествии</legend>
+                <ul class="fieldset-progress__list">
+                  <li class="fieldset-progress__item">
+                    <input type="checkbox" class="visually-hidden" id="progress-shark">
+                    <label class="fieldset-progress__indicator" for="progress-shark"></label>
+                    <label class="fieldset-progress__title" for="progress-shark">Сделал селфи с акулой</label>
+                  </li>
+                  <li class="fieldset-progress__item">
+                    <input type="checkbox" class="visually-hidden" id="progress-beach">
+                    <label class="fieldset-progress__indicator" for="progress-beach"></label>
+                    <label class="fieldset-progress__title" for="progress-beach">Обгорел на пляже</label>
+                  </li>
+                  <li class="fieldset-progress__item">
+                    <input type="checkbox" class="visually-hidden" id="progress-norris">
+                    <label class="fieldset-progress__indicator" for="progress-norris"></label>
+                    <label class="fieldset-progress__title" for="progress-norris">Видел Чака Норриса</label>
+                  </li>
+                  <li class="fieldset-progress__item">
+                    <input type="checkbox" class="visually-hidden" id="progress-souvenir">
+                    <label class="fieldset-progress__indicator" for="progress-souvenir"></label>
+                    <label class="fieldset-progress__title" for="progress-souvenir">Накупил сувениров</label>
+                  </li>
+                  <li class="fieldset-progress__item">
+                    <input type="checkbox" class="visually-hidden" id="progress-tower">
+                    <label class="fieldset-progress__indicator" for="progress-tower"></label>
+                    <label class="fieldset-progress__title" for="progress-tower">Удержал башню</label>
+                  </li>
+                  <li class="fieldset-progress__item">
+                    <input type="checkbox" class="visually-hidden" id="progress-hotel">
+                    <label class="fieldset-progress__indicator" for="progress-hotel"></label>
+                    <label class="fieldset-progress__title" for="progress-hotel">Разгромил отель</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="fieldset-contact form__contact">
+                <legend>Контактная информация</legend>
+                <ul class="fieldset-contact__list">
+                  <li class="fieldset-contact__item">
+                    <label class="fieldset-contact__title" for="contact-phone">Номер телефона</label>
+                    <p>
+                      <input type="tel" id="contact-phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Номер, пожалуйста">
+                      <label class="fieldset-contact__icon fieldset-contact__icon--phone" for="contact-phone"></label>
+                    </p>
+                  </li>
+                  <li class="fieldset-contact__item">
+                    <label class="fieldset-contact__title" for="contact-mail">Адрес почты</label>
+                    <p>
+                      <input type="email" id="contact-mail" name="mail" placeholder="Введите почту *" required>
+                      <label class="fieldset-contact__icon fieldset-contact__icon--mail" for="contact-mail"></label>
+                    </p>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="fieldset-app form__app">
+                <legend>С каким приложением путешествовали?</legend>
+                <ul class="fieldset-app__list">
+                  <li class="fieldset-app__item">
+                    <input type="radio" class="visually-hidden" name="app" id="app-ios">
+                    <label class="fieldset-app__indicator" for="app-ios"></label>
+                    <label class="fieldset-app__title" for="app-ios">Pink для iOS</label>
+                  </li>
+                  <li class="fieldset-app__item">
+                    <input type="radio" class="visually-hidden" name="app" id="app-android">
+                    <label class="fieldset-app__indicator" for="app-android"></label>
+                    <label class="fieldset-app__title" for="app-android">Pink на Android</label>
+                  </li>
+                  <li class="fieldset-app__item">
+                    <input type="radio" class="visually-hidden" name="app" id="app-windows">
+                    <label class="fieldset-app__indicator" for="app-windows"></label>
+                    <label class="fieldset-app__title" for="app-windows">Windows Phone</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="fieldset-emotions form__emotions">
+                <legend>Опишите свои эмоции</legend>
+                <textarea name="emotions" id="" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              </fieldset>
+              <div class="fieldset-submit form__submit">
+                <button type="submit" class="fieldset-submit__button">Отправить форму</button>
+                <p class="fieldset-submit__text"><span class="fieldset-submit__mark">*</span> &mdash; обязательные <span class="fieldset-submit__for-filling">для заполнения</span> поля</p>
+              </div>
+            </form>
+          </div>
         </section>
       </main>
       <footer class="page-footer page-body__footer">
-        <a href="./index.html" class="page-footer__link">
-          <img class="page-footer__logo" src="./img/logo-pink-blue-mobile.svg" alt="Логотип" width="146" height="40">
-        </a>
-        <ul class="social-list page-footer__social-list">
-          <li class="social-list__item">
-            <a class="social-list__link" href="#" target="_blank">
-              <img src="./img/icon-twitter.svg" alt="Twitter" width="18" height="15">
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link" href="#" target="_blank">
-              <img src="./img/icon-facebook.svg" alt="facebook" width="9" height="19">
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link" href="#" target="_blank">
-              <img src="./img/icon-youtube.svg" alt="Youtube" width="15" height="14">
-            </a>
-          </li>
-        </ul>
-        <p class="developed page-footer__developed">
-          Разработано
-          <a class="developed__link" href="https://htmlacademy.ru" target="_blank">
-            <img class="developed__logo" src="./img/logo-htmlacademy.svg" alt="HtmlAcademy" width="27" height="34">
+        <div class="content page-footer__content">
+          <a href="./index.html" class="page-footer__link">
+            <picture>
+              <source media="(min-width: 960px)" srcset="./img/logo-pink-blue-desktop.svg">
+              <img  class="page-footer__logo" src="./img/logo-pink-blue-mobile.svg" alt="Логотип">
+            </picture>
           </a>
-        </p>
+          <ul class="social-list page-footer__social-list">
+            <li class="social-list__item">
+              <a class="social-list__link" href="#" target="_blank">
+                <img src="./img/icon-twitter.svg" alt="Twitter" width="18" height="15">
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="#" target="_blank">
+                <img src="./img/icon-facebook.svg" alt="facebook" width="9" height="19">
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="#" target="_blank">
+                <img src="./img/icon-youtube.svg" alt="Youtube" width="15" height="14">
+              </a>
+            </li>
+          </ul>
+          <p class="developed page-footer__developed">
+            Разработано
+            <a class="developed__link" href="https://htmlacademy.ru" target="_blank">
+              <img class="developed__logo" src="./img/logo-htmlacademy.svg" alt="HtmlAcademy" width="27" height="34">
+            </a>
+          </p>
+        </div>
       </footer>
     </div>
   </body>
